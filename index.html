@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAC Environmental and Consulting Services</title>
+  <meta name="description" content="Philippine forestry and environmental consultancy — tree inventory, reforestation planning, biodiversity surveys, GIS mapping, and CBFM support." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:ital,wght@0,400;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAV
+  ════════════════════════════════════════════════ -->
+  <nav id="nav" class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner container">
+
+      <a href="#home" class="nav__brand" aria-label="MC Environmental — home">
+        <div class="nav__logo-box" id="nav-logo" aria-hidden="true"></div>
+        <span class="nav__company-name" id="nav-company-name"></span>
+      </a>
+
+      <button
+        class="nav__hamburger"
+        id="nav-hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu" role="list"></ul>
+
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════════ -->
+    <section id="home" class="hero" aria-label="Introduction">
+
+      <div class="hero__image-half" aria-hidden="true">
+        <div class="hero__image-box" id="hero-image"></div>
+      </div>
+
+      <div class="hero__content-half">
+        <div class="hero__content">
+          <h1 class="hero__headline" id="hero-headline"></h1>
+          <p  class="hero__subheadline" id="hero-subheadline"></p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary"   id="hero-cta-primary"   href="#contact"></a>
+            <a class="btn btn--secondary" id="hero-cta-secondary" href="#portfolio"></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SERVICES
+    ════════════════════════════════════════════════ -->
+    <section id="services" class="services section" aria-labelledby="services-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <h2 class="section-heading" id="services-heading">Our Services</h2>
+          <p  class="section-subheading">Science-led solutions across the full forestry and environmental management spectrum.</p>
+        </div>
+
+        <div class="services__grid" id="services-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         ABOUT
+    ════════════════════════════════════════════════ -->
+    <section id="about" class="about section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__layout">
+
+          <div class="about__image-col reveal" aria-hidden="true">
+            <div class="about__image-box" id="about-image"></div>
+          </div>
+
+          <div class="about__text-col reveal">
+            <h2 class="section-heading" id="about-heading"></h2>
+            <div class="about__body" id="about-body"></div>
+            <blockquote class="about__pull-quote" id="about-pull-quote"></blockquote>
+            <div class="about__stats" id="about-stats" role="list" aria-label="Key statistics"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         PORTFOLIO
+    ════════════════════════════════════════════════ -->
+    <section id="portfolio" class="portfolio section" aria-labelledby="portfolio-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <h2 class="section-heading" id="portfolio-heading">Field Gallery</h2>
+          <p  class="section-subheading">A selection of projects from across the Philippine archipelago.</p>
+        </div>
+
+        <div class="portfolio__grid" id="portfolio-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         TESTIMONIALS
+    ════════════════════════════════════════════════ -->
+    <section id="testimonials" class="testimonials section" aria-labelledby="testimonials-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <h2 class="section-heading" id="testimonials-heading">What Our Partners Say</h2>
+        </div>
+
+        <div class="testimonials__track" id="testimonials-track" role="list"></div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         CONTACT
+    ════════════════════════════════════════════════ -->
+    <section id="contact" class="contact section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__layout">
+
+          <div class="contact__info reveal">
+            <h2 class="section-heading" id="contact-heading"></h2>
+            <p id="contact-intro"></p>
+            <ul class="contact__details" id="contact-details" role="list"></ul>
+          </div>
+
+          <div class="contact__form-col reveal">
+            <form class="contact__form" id="contact-form" novalidate>
+
+              <div class="form-group">
+                <label for="form-name"    id="label-name"></label>
+                <input type="text"  id="form-name"    name="name"    autocomplete="name"    required />
+              </div>
+
+              <div class="form-group">
+                <label for="form-email"   id="label-email"></label>
+                <input type="email" id="form-email"   name="email"   autocomplete="email"   required />
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" id="label-subject"></label>
+                <input type="text"  id="form-subject" name="subject" />
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" id="label-message"></label>
+                <textarea id="form-message" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary" id="form-submit"></button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════ -->
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo-box" id="footer-logo" aria-hidden="true"></div>
+          <p class="footer__company-name" id="footer-company-name"></p>
+          <p class="footer__tagline"      id="footer-tagline"></p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <ul class="footer__nav-list" id="footer-nav-list" role="list"></ul>
+        </nav>
+      </div>
+
+      <p class="footer__copyright" id="footer-copyright"></p>
+
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════
+       LIGHTBOX  (hidden until a portfolio card is clicked)
+  ════════════════════════════════════════════════ -->
+  <div
+    class="lightbox"
+    id="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Project image lightbox"
+    hidden
+  >
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close lightbox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="18" y1="6"  x2="6"  y2="18"/>
+        <line x1="6"  y1="6"  x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <div class="lightbox__content" id="lightbox-content" role="document">
+
+      <div class="lightbox__image-wrap">
+        <div class="lightbox__image-box" id="lightbox-image-box" aria-hidden="true"></div>
+        <div class="lightbox__herbarium-tag" id="lightbox-species"></div>
+      </div>
+
+      <div class="lightbox__caption">
+        <p class="lightbox__title" id="lightbox-title"></p>
+        <p class="lightbox__desc"  id="lightbox-desc"></p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
