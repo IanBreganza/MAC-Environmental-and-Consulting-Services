@@ -420,11 +420,11 @@ button  { cursor: pointer; border: none; background: none; font: inherit; }
 
 /* Heights sized so two rows + section header fit in one viewport */
 .portfolio__card:nth-child(1) .portfolio__card-img-wrap { height: 220px; }
-.portfolio__card:nth-child(2) .portfolio__card-img-wrap { height: 175px; }
-.portfolio__card:nth-child(3) .portfolio__card-img-wrap { height: 255px; }
-.portfolio__card:nth-child(4) .portfolio__card-img-wrap { height: 190px; }
-.portfolio__card:nth-child(5) .portfolio__card-img-wrap { height: 235px; }
-.portfolio__card:nth-child(6) .portfolio__card-img-wrap { height: 175px; }
+.portfolio__card:nth-child(2) .portfolio__card-img-wrap { height: 220px; }
+.portfolio__card:nth-child(3) .portfolio__card-img-wrap { height: 220px; }
+.portfolio__card:nth-child(4) .portfolio__card-img-wrap { height: 220px; }
+.portfolio__card:nth-child(5) .portfolio__card-img-wrap { height: 220px; }
+.portfolio__card:nth-child(6) .portfolio__card-img-wrap { height: 220px; }
 
 .portfolio__card {
   position:      relative;
